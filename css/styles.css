@@ -3,11 +3,20 @@
   box-sizing: border-box;
 }
 body {
-  background: #f5f5f5;
-  font-size: 1.5em;
+  background: red;
   font-family: sans-serif;
   text-align: center;
   font-weight: bold;
+  color: white;
+}
+
+li {
+  text-decoration: none;
+  display: inline;
+}
+
+li a:visited, a:hover,  {
+  text-decoration: none;
   color: white;
 }
 
@@ -33,7 +42,7 @@ aside {
 }
 
 footer {
-  background-color: #70db70;
+  font-size: 0.25em;
 }
 
 /* Grid layout */
@@ -54,14 +63,14 @@ footer {
 }
 .grid {
   display: grid;
-  grid-template-rows: 3fr 1fr 8fr 1fr;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 3fr 1fr 5fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 10px 20px;
   grid-template-areas:
-    "head head head"
-    "nav nav nav"
-    "main main aside"
-    "foot foot foot";
+    "head head"
+    "nav nav"
+    "main aside"
+    "foot foot";
 }
 
 /* Media Queries */
