@@ -19,7 +19,7 @@ li {
   display: inline;
 }
 
-a:visited a:hover a:active  {
+a:link a:visited a:hover a:active  {
   text-decoration: none;
   color: white;
 }
