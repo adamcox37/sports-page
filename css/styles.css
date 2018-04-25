@@ -3,10 +3,15 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #ffe6ee;
   font-family: sans-serif;
   text-align: center;
   font-weight: bold;
   color: white;
+}
+
+img {
+  max-width: 75%;
 }
 
 ul {
@@ -38,12 +43,8 @@ p {
   border-radius: 15px;
 }
 
-header {
-  background-color: #ffb366;
-}
-
 nav {
-  background-color: #99ebff;
+  background-color: #1a001a;
 }
 
 main {
@@ -77,7 +78,7 @@ footer {
 }
 .grid {
   display: grid;
-  grid-template-rows: 3fr 1fr 5fr;
+  grid-template-rows: 5fr 1fr 4fr;
   grid-template-columns: 2fr 1fr;
   grid-gap: 70px 20px;
   grid-template-areas:
