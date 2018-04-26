@@ -1,4 +1,6 @@
-/* Base Styles */
+/******************
+    Base Styles 
+******************/
 * {
   box-sizing: border-box;
 }
@@ -14,6 +16,9 @@ img {
   max-width: 75%;
 }
 
+/******************
+    Text Styles  
+******************/
 ul {
   display: flex;
   justify-content: space-around;
@@ -24,9 +29,9 @@ li {
   display: inline;
 }
 
-a:link a:visited a:hover a:active  {
+li a {
+  color: #ffe6ee;
   text-decoration: none;
-  color: white;
 }
 
 article {
@@ -38,9 +43,16 @@ p {
   padding: 15px;
 }
 
+h1 {
+  padding-top: 15px;
+  color: #1a001a;
+}
+
+/******************
+    Grid Styles   
+******************/
 .grid > * {
   padding: 10px;
-  border-radius: 15px;
 }
 
 nav {
@@ -49,10 +61,12 @@ nav {
 
 main {
   background-color: #ff99e6;
+  border-radius: 15px;
 }
 
 aside {
   background-color: #ff1a75;
+  border-radius: 15px;
 }
 
 footer {
@@ -60,7 +74,9 @@ footer {
   color: black;
 }
 
-/* Grid layout */
+/******************
+    Grid Layout  
+******************/
 header {
   grid-area: head;
 }
@@ -78,9 +94,9 @@ footer {
 }
 .grid {
   display: grid;
-  grid-template-rows: 5fr 1fr 4fr;
+  grid-template-rows: 5fr 60px 4fr;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 70px 20px;
+  grid-gap: 20px;
   grid-template-areas:
     "head head"
     "nav nav"
@@ -88,11 +104,23 @@ footer {
     "foot foot";
 }
 
-/* Media Queries */
-@media (max-width: 415px) {
+/******************
+    Media Queries 
+******************/
+@media (max-width: 949px) {
   .grid {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 5px;
+    grid-template-areas:
+    "head"
+    "nav"
+    "aside"
+    "main"
+    "foot";
+  }
+
+  h1 {
+    font-size: 1em;
   }
 }
